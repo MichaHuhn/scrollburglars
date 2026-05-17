@@ -5,14 +5,10 @@ import { SCROLLBURGLARS } from '@/scripts/scrollburglars.ts';
 <template>
   <main class="home-view">
     <ol class="scrollburglar-list">
-      <li v-for="SCROLLBURGLAR in SCROLLBURGLARS" :key="SCROLLBURGLAR.fileName">
-        <img
-          :src="`src/assets/scrollburglars/${SCROLLBURGLAR.fileName}`"
-          :alt="SCROLLBURGLAR.label"
-          v-if="SCROLLBURGLAR.type === 'image'"
-        />
+      <li v-for="SCROLLBURGLAR in SCROLLBURGLARS" :key="SCROLLBURGLAR.file">
+        <img :src="SCROLLBURGLAR.file" :alt="SCROLLBURGLAR.label" v-if="SCROLLBURGLAR.type === 'image'" />
         <video controls autoplay loop muted v-else>
-          <source :src="`src/assets/scrollburglars/${SCROLLBURGLAR.fileName}`" />
+          <source :src="SCROLLBURGLAR.file" />
         </video>
 
         <p>
