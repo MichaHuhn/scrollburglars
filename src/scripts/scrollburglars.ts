@@ -7,6 +7,7 @@ import MediaMarkt from '@/assets/scrollburglars/mediamarkt.de_2026-05-19.webp';
 import SharkViniOne from '@/assets/scrollburglars/shark.vini.one_2026-05-17.webp';
 import SpaceX from '@/assets/scrollburglars/SpaceX_2026-05-10.webp';
 import SvgDavis7Sh from '@/assets/scrollburglars/svg.davis7.sh_2026-05-17.webp';
+import Twitch from '@/assets/scrollburglars/Twitch_2026-05-24.webp';
 
 type Scrollburglar = {
   label: string;
@@ -16,6 +17,12 @@ type Scrollburglar = {
 };
 
 export const SCROLLBURGLARS = [
+  {
+    label: 'Twitch',
+    date: '2026-05-24',
+    type: 'image',
+    file: Twitch
+  },
   {
     label: 'check24.de',
     date: '2026-05-20',
